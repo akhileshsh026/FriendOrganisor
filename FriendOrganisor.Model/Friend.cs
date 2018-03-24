@@ -8,5 +8,6 @@ namespace FriendOrganisor.Model
 {
     public class Friend
     {
+
     }
 }
