@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendOrganisor.UI", "Frien
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendOrganisor.DataAccess", "FriendOrganisor.DataAccess\FriendOrganisor.DataAccess.csproj", "{3ECBCE98-8E8A-41E0-BB45-EFFCEEAB0A53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendOrganisor.Model", "FriendOrganisor.Model\FriendOrganisor.Model.csproj", "{3E29AE56-AB9D-4745-8075-866F37C37DD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3ECBCE98-8E8A-41E0-BB45-EFFCEEAB0A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ECBCE98-8E8A-41E0-BB45-EFFCEEAB0A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ECBCE98-8E8A-41E0-BB45-EFFCEEAB0A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E29AE56-AB9D-4745-8075-866F37C37DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E29AE56-AB9D-4745-8075-866F37C37DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E29AE56-AB9D-4745-8075-866F37C37DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E29AE56-AB9D-4745-8075-866F37C37DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
