@@ -3,16 +3,20 @@ using FriendOrganisor.UI.Data;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FriendOrganisor.UI.ViewModel
 {
-    public class MainViewModel
+    public class MainViewModel : INotifyPropertyChanged
     {
         private IFriendsDataService _frienddataService;
         private Friend _SelectedFriend;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public MainViewModel(IFriendsDataService friendDataService) 
         {
             Friends = new ObservableCollection<Friend>();
@@ -33,7 +37,16 @@ namespace FriendOrganisor.UI.ViewModel
         public Friend SelectedFriend
         {
             get { return _SelectedFriend; }
-            set { _SelectedFriend = value; }
+            set
+            {
+                _SelectedFriend = value;
+                OnPropertyChanged("SelectedFriend"); 
+            }
+        }
+
+        private void OnPropertyChanged(string PropertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
         }
 
 
