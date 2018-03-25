@@ -10,6 +10,7 @@ namespace FriendOrganisor.UI
         {
             InitializeComponent();
             DataContext = viewmodel;
+            viewmodel.Load(); //bad idea
         }
     }
 }
