@@ -40,7 +40,7 @@ namespace FriendOrganisor.UI.ViewModel
             set
             {
                 _SelectedFriend = value;
-                OnPropertyChanged("SelectedFriend"); 
+                OnPropertyChanged(nameof(SelectedFriend)); 
             }
         }
 
