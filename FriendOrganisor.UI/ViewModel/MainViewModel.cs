@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace FriendOrganisor.UI.ViewModel
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : ViewModelBase
     {
         private IFriendsDataService _frienddataService;
         private Friend _SelectedFriend;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+       
 
         public MainViewModel(IFriendsDataService friendDataService) 
         {
@@ -45,11 +45,17 @@ namespace FriendOrganisor.UI.ViewModel
             }
         }
 
-        private void OnPropertyChanged([CallerMemberName]string PropertyName=null)
+      
+
+    }
+
+    public class ViewModelBase : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName]string PropertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
         }
-
-
     }
+
 }
