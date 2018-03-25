@@ -3,7 +3,7 @@ using FriendOrganisor.Model;
 
 namespace FriendOrganisor.UI.Data
 {
-    interface IFriendsDataService
+   public interface IFriendsDataService
     {
         IEnumerable<Friend> GetAllFriends();
     }
